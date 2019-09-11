@@ -1,21 +1,44 @@
-<h1>Hello Jaerbi</h1>
-<p>Yippee-ki-yay</p>
-<div style="color: aqua">
-    <ul>
-        <li><strong>1</strong></li>
-        <li><strong>2</strong></li>
-        <li><strong>3</strong></li>
-    </ul>
-    <button>Button</button>
-    <hr>
-    <button>Click Some</button>
-</div>
-<p>Yippee-ki-yay
-    <ul>
-        <li><span>1Yippe-ki-yay1</span></li>
-        <li><span>2Yippe-ki-yay2</span></li>
-        <li><span>3Yippe-ki-yay3</span></li>
-        <li><span>4Yippe-ki-yay4</span></li>
-        <li><span>5Yippe-ki-yay5</span></li>
-    </ul>
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tortoise</title>
+</head>
+<body>
+
+        <h1>Hello Jaerbi</h1>
+        <p>Yippee-ki-yay</p>
+        <div style="color: aqua">
+            <ul>
+                <li><strong>1</strong></li>
+                <li><strong>2</strong></li>
+                <li><strong>3</strong></li>
+            </ul>
+            <button onclick="button()">Button</button>
+            <hr>
+        </div>
+        <p>Yippee-ki-yay
+            <ul id="ul" style="color: blueviolet">
+                <li><span>1 Yippe-ki-yay1</span></li>
+                <li><span>2 Yippe-ki-yay2</span></li>
+                <li><span>3 Yippe-ki-yay3</span></li>
+                <li><span>4 Yippe-ki-yay4</span></li>
+                <li><span>5 Yippe-ki-yay5</span></li>
+            </ul>
+            <button onclick="clickq()">Change Color</button>
+        </p>
+    <script>
+        function button() {
+            alert('Thanks you for click this button')
+        }
+
+        function clickq() {
+            const ul = document.getElementById('ul')
+            const num = Math.floor(Math.random() * 1000000) 
+            ul.style.backgroundColor = '#' + num
+        }
+    </script>
+</body>
+</html>
