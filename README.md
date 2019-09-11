@@ -1,3 +1,8 @@
-# Test tortoise GIT 
+# Test tortoise GIT
+# 
 # test 1
-Some changes in test one branchSome text Yippee-ki-yay
+
+Some changes in test one branch
+Some text Yippee-ki-yay
+
+add branch number two test_2
